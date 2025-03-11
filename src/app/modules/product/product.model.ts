@@ -9,8 +9,12 @@ const productSchema = new Schema<TProduct>({
     description : {type : String, required: true},
     quantity: {type : Number, required: true},
     inStock : {type : Boolean, required: true},
-    createdAt : {type : String, required: true},
-    updateAt : {type : String, required: true},
+    createdAt : {
+        created : {type : Date, default: Date.now},
+    },
+    updateAt : {
+        created : {type : Date, default: Date.now},
+    },
 })
 
 export const ProductModel = model<TProduct>('Product', productSchema);
