@@ -7,6 +7,7 @@ router.post('/products', ProductControllers.createProduct);
 
 router.get('/products/:productId', ProductControllers.getOneProductFromDB);
 router.get('/products', ProductControllers.getAllProduct);
+router.put('/products/:productId', ProductControllers.updateProduct);
 
 
 export const ProductRoutes = router;
@@ -16,3 +17,6 @@ export const ProductRoutes = router;
 	// Get one - 	/api/products/:productId (Get)
 	// Update One - 	/api/products/:productId (Put)
 	// Delete One - 	/api/products/:productId (Delete)
+	
+	// Order -		/api/orders (Post)
+	// Calculate - 	/api/orders/revenue (Get)
