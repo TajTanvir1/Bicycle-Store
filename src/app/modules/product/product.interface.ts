@@ -8,7 +8,8 @@ export type TProduct = {
     description : string,
     quantity: number,
     inStock : boolean,
-    createdAt : string,
-    updateAt : string,
+    createdAt? : Date,
+    updatedAt? : Date,
   }
+
   
