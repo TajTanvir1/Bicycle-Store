@@ -10,7 +10,7 @@ app.use(cors());
 
 
 // Application Routes
-app.use('/api/products', ProductRoutes);
+app.use('/api', ProductRoutes);
 
 
     // Create  - 	/api/products (Post)

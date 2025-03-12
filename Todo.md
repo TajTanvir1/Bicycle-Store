@@ -2,6 +2,8 @@ L2 A2 - Backend with Mongoose
 
 ***Name - Bi-cycle Store
 
+Link - https://github.com/Apollo-Level2-Web-Dev/batch-4-assignment-2/blob/main/4-Bi-Cycle-Store.md
+
 Develop an Express application with TypeScript, integrating MongoDB with Mongoose to manage a Bicycle Store.
 
 
