@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Roadster 5000",
+    "brand": "SpeedX",
+    "price": 300,
+    "type": "Road",
+    "description": "A premium road bike designed for speed and performance.",
+    "quantity": 20,
+    "inStock": true
+  },
+  {
+    "name": "Trail Blazer X",
+    "brand": "MountainPro",
+    "price": 450,
+    "type": "Mountain",
+    "description": "A rugged mountain bike built for tough trails and endurance.",
+    "quantity": 15,
+    "inStock": true
+  },
+  {
+    "name": "City Commuter 200",
+    "brand": "UrbanRide",
+    "price": 220,
+    "type": "Hybrid",
+    "description": "A comfortable hybrid bike for city commuting and casual rides.",
+    "quantity": 30,
+    "inStock": true
+  },
+  {
+    "name": "Speedster Elite",
+    "brand": "Velocity",
+    "price": 500,
+    "type": "Road",
+    "description": "A high-performance road bike for professional cyclists.",
+    "quantity": 10,
+    "inStock": true
+  },
+  {
+    "name": "Mountain King",
+    "brand": "RockRider",
+    "price": 600,
+    "type": "Mountain",
+    "description": "An advanced mountain bike with full suspension for extreme trails.",
+    "quantity": 8,
+    "inStock": false
+  },
+  {
+    "name": "EcoRide 100",
+    "brand": "GreenCycle",
+    "price": 180,
+    "type": "Hybrid",
+    "description": "An eco-friendly bicycle designed for smooth rides and efficiency.",
+    "quantity": 25,
+    "inStock": true
+  },
+  {
+    "name": "Turbo Racer 700",
+    "brand": "SpeedX",
+    "price": 750,
+    "type": "Road",
+    "description": "A top-tier racing bike with ultra-lightweight frame technology.",
+    "quantity": 5,
+    "inStock": false
+  },
+  {
+    "name": "Adventure Pro",
+    "brand": "OffRoaders",
+    "price": 520,
+    "type": "Mountain",
+    "description": "A durable mountain bike built for off-road adventures.",
+    "quantity": 12,
+    "inStock": true
+  },
+  {
+    "name": "Cruiser Classic",
+    "brand": "BeachRide",
+    "price": 250,
+    "type": "Cruiser",
+    "description": "A stylish cruiser bike for relaxed beachside and city rides.",
+    "quantity": 18,
+    "inStock": true
+  },
+  {
+    "name": "Electric Explorer",
+    "brand": "E-Ride",
+    "price": 850,
+    "type": "Electric",
+    "description": "An advanced electric bike with long battery life for urban travel.",
+    "quantity": 7,
+    "inStock": false
+  }
+]
