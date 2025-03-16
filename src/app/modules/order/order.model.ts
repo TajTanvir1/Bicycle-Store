@@ -6,9 +6,9 @@ const orderSchema = new Schema<TOrder>({
     product : {type: String, required: true},
     quantity : {type: Number, required: true},
     totalPrice : {type: Number, required: true},
-    createdAt : {type: String, required: true},
-    updateAt : {type: String, required: true},
-})
+},
+{ timestamps: true, versionKey: false }
+)
 
 
-const OrderModel = model<TOrder>('Order', orderSchema)
+export const OrderModel = model<TOrder>('Order', orderSchema);
