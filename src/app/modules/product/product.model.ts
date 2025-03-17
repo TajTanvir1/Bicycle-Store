@@ -2,7 +2,7 @@ import { Schema, model, connect } from 'mongoose';
 import { TProduct } from './product.interface';
 
 const productSchema = new Schema<TProduct>({
-    name: {type: String, required: true},
+    name: {type: String, required: true, unique: true},
     brand: {type : String, required: true},
     price : {type : Number, required: true},
     type: {type: String, required: true},

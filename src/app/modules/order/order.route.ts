@@ -3,12 +3,8 @@ import { OrderControllers } from "./order.controller";
 
 const router = express.Router()
 
+// @ts-ignore
 router.post('/', OrderControllers.createAnOrder);
-
-// router.get('/products/:productId', ProductControllers.getOneProductFromDB);
-// router.get('/products', ProductControllers.getAllProduct);
-// router.put('/products/:productId', ProductControllers.updateProduct);
-// router.delete('/products/:productId', ProductControllers.deleteProduct);
 
 
 export const OrderRoutes = router;
