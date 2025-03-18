@@ -3,6 +3,7 @@ import { OrderServices } from './order.service';
 import { ProductModel } from '../product/product.model';
 import { TOrder } from './order.interface';
 import mongoose from 'mongoose';
+import { OrderModel } from './order.model';
 
 const createAnOrder = async (req: Request, res: Response) => {
   try {
@@ -61,10 +62,6 @@ const createAnOrder = async (req: Request, res: Response) => {
       totalPrice: calculatedPrice,
     };
 
-    //  const orderData = {
-    //     email, productId, orderQuantity, calculatedPrice
-    //  }
-
     const result = await OrderServices.createAnOrder(orderData);
 
     res.status(200).json({
@@ -81,6 +78,33 @@ const createAnOrder = async (req: Request, res: Response) => {
   }
 };
 
+const getRevenue = async (req:Request, res:Response)=>{
+    try {
+        const revenue = await OrderModel.aggregate([
+            {
+                $group :{
+                    _id: null,
+                    // @ts-ignore
+                    totalRevenue : {$sum : "$orderPrice"},
+                }
+            }
+        ]);
+
+        res.status(200).json({
+            message: 'Revenue get successfully',
+            success: true,
+            data : revenue[0]?.totalRevenue,
+          });
+        } catch (error : any) {
+          return res.status(500).json({
+            success: false,
+            message: 'Something is Wrong',
+            error: error.massage,
+          });
+        }
+}
+
 export const OrderControllers = {
   createAnOrder,
+  getRevenue,
 };
