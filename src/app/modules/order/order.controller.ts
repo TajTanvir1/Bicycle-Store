@@ -6,8 +6,6 @@ import mongoose from 'mongoose';
 
 const createAnOrder = async (req: Request, res: Response) => {
   try {
-    //  const order = req.body;
-
     const {
       product: productId,
       quantity: orderQuantity,

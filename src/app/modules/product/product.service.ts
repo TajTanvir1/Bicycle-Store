@@ -6,8 +6,8 @@ const createProductIntoDB = async (product : TProduct)=>{
     return result;
 }
 
-const getAllProductFromDB = async ()=>{
-    const result = await ProductModel.find();
+const getAllProductFromDB = async (filter = {})=>{
+    const result = await ProductModel.find(filter);
     return result;
 }
 

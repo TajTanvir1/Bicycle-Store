@@ -19,7 +19,22 @@ const createProduct = async (req:Request, res: Response)=>{
 
 const getAllProduct = async (req: Request, res:Response)=>{
     try {
-        const result = await ProductServices.getAllProductFromDB();
+        const {searchTerm } = req.query;
+
+        let filter = {};
+
+        if(searchTerm){
+            filter={
+                $or: [
+                    {name: {$regex: searchTerm, $options: "i"}},
+                    {brand: {$regex: searchTerm, $options: "i"}},
+                    {type: {$regex: searchTerm, $options: "i"}},
+                ]
+            }
+        }
+
+
+        const result = await ProductServices.getAllProductFromDB(filter);
         res.status(200).json({
             message: "All product get successfully",
             success: true,
