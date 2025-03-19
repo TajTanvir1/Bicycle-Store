@@ -85,7 +85,7 @@ const getRevenue = async (req:Request, res:Response)=>{
                 $group :{
                     _id: null,
                     // @ts-ignore
-                    totalRevenue : {$sum : "$orderPrice"},
+                    totalRevenue : {$sum : "$totalPrice"},
                 }
             }
         ]);
@@ -93,7 +93,7 @@ const getRevenue = async (req:Request, res:Response)=>{
         res.status(200).json({
             message: 'Revenue get successfully',
             success: true,
-            data : revenue[0]?.totalRevenue,
+            data :{totalRevenue : revenue[0]?.totalRevenue},
           });
         } catch (error : any) {
           return res.status(500).json({
