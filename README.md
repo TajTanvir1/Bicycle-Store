@@ -291,8 +291,8 @@ npm run start:dev
 - `404 Not Found`: Return when a product or order is not found.
 - `Validation Errors`: Return specific error messages for validation failures (e.g., invalid email, insufficient stock).
 
-## [Video Explanation] (https://github.com/TajTanvir1/Bicycle-Store.git)
-Here is a Video Explanation about this "Bicycle Store" Express application.
+# [Video Explanation](https://drive.google.com/drive/folders/1oAYpmteq98nClCC2rEy4H6d8B4Az3lpT?usp=sharing)
+Here is a Video Explanation of this "Bicycle Store" Express application.
 
 ## Author
 Developed by **Tanvir Ahamed Jubayer**
