@@ -1,4 +1,4 @@
-# Bicycle-Store-Backend
+# [Bicycle-Store-Application](https://github.com/TajTanvir1/Bicycle-Store)
 
 
 ## Project Overview
@@ -29,19 +29,21 @@ In this Express application side data validation handle with TypeScript & Mongoo
 git clone https://github.com/TajTanvir1/Bicycle-Store.git
 ```
 
-2. Install Dependencies Needed
+2. Open cloned folder in Vs code or code editor
+
+3. Install Dependencies Needed
 ```bash
 npm install
 ```
 
-3. Set Up Environment Variables (create `.env` file):
+4. Set Up Environment Variables (create `.env` file):
 ```.env (file)
 
 PORT=5000
 DATABASE_URL=(mongodb connection)
 ```
 
-4. Run the Application
+5. Run the Application
 ```bash
 npm run start:dev
 ```
